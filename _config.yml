@@ -1,4 +1,5 @@
 encoding: UTF-8
+name: Josh Singley
 title: Josh Singley
 description: Hobby maker and builder
 url: joshsingley.com
@@ -11,6 +12,8 @@ social:
     - https://www.instagram.com/josh_singley/
     - https://www.youtube.com/channel/UCZIPGdjm22_ekwKgijRmk7Q
 lang: en_US
+permalink: /blog/:year/:month/:day/:title
+url: http://joshsingley.com
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
