@@ -17,3 +17,5 @@ url: http://joshsingley.com
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+collections:
+  - videos

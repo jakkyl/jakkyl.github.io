@@ -6,14 +6,16 @@ heading:
 <div class="row">
     <div class="col-lg-12">
         <div class="row">
-            <div class="col-lg-4 embed-responsive embed-responsive-16by9">
-                <div class="embed-responsive-item youtube" data-embed="ZgG22B-7tZQ"><div class="play-button"></div></div>
+            {% for video in site.videos %}
+            <div class="col-lg-4">
+                <div class="youtube" data-embed="{{ video.youtubeId}}"><div class="play-button"></div></div>
             </div>
-            <div class="col-lg-4 embed-responsive embed-responsive-16by9">
+            {% endfor %}
+            <!--<div class="col-lg-4 embed-responsive embed-responsive-16by9">
                 <div class="embed-responsive-item youtube" data-embed="lwxE6zSCdQk"><div class="play-button"></div></div>
-            </div>
+            </div>-->
         </div>
-        <div class="row">
+        <!--<div class="row">
             <div class="col-lg-4 embed-responsive embed-responsive-16by9">
                 <div class="embed-responsive-item youtube" data-embed="75zcsPOMxRE"><div class="play-button"></div></div>
             </div>
@@ -23,6 +25,6 @@ heading:
             <div class="col-lg-4 embed-responsive embed-responsive-16by9">
                 <div class="embed-responsive-item youtube" data-embed="Unsg2eRMIMo"><div class="play-button"></div></div>
             </div>
-        </div>
+        </div>-->
     </div>
 </div>
