@@ -2,12 +2,18 @@
 {
 	.navbar-brand
 	{
-		position: absolute;
+		position: absolute; 
 		top: 10px;
 		left: 10px;
 	}
 }
 
+#mainNav
+{
+	
+    border-bottom: 0;
+    background-color: transparent;
+}
 /* YOUTUBE */
 .embed-responsive
 {
