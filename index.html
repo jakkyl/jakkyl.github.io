@@ -1,6 +1,25 @@
 ---
 layout: default
 title: Home
-heading: I make things
 background: img/home-bg.png
 ---
+<div class="row">
+    <div class="col-lg-12">
+		<div class="row">
+			<div class="col-lg-12">
+				<h3>Recent Projects</h3>
+			</div>
+		</div>
+        <div class="row">
+            {% assign sortedVideos = site.videos | reverse %}
+            {% for video in sortedVideos limit:9 %}
+            <div class="col-lg-4" style="margin-bottom:15px;">
+                <div class="youtube" data-embed="{{ video.youtubeId }}">
+					<div class="play-button"></div>
+				</div>
+				<!-- <span>{{ video.description }}</span> -->
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
