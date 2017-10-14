@@ -7,7 +7,7 @@ background: img/home-bg.png
     <div class="col-lg-12">
 		<div class="row">
 			<div class="col-lg-12">
-				<h3>Recent Projects</h3>
+				<h3>Recent Videos</h3>
 			</div>
 		</div>
         <div class="row">
@@ -17,7 +17,21 @@ background: img/home-bg.png
                 <div class="youtube" data-embed="{{ video.youtubeId }}">
 					<div class="play-button"></div>
 				</div>
-				<!-- <span>{{ video.description }}</span> -->
+            </div>
+            {% endfor %}
+        </div>
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<h3>Recent Projects</h3>
+			</div>
+		</div>
+        <div class="row">
+            {% assign sortedProjects = site.projects | reverse %}
+            {% for project in site.projects %}
+            <div class="col-lg-4">
+				<img width="100%" src="{{ project.thumbnail }}" />                
+				<div class="text-center">{{ project.title }}</span>
             </div>
             {% endfor %}
         </div>
