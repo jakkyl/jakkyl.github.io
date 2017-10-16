@@ -1,4 +1,4 @@
 ---
-thumbnail:
-date: 2017-08-10
+thumbnail: img/projects/console.png
+date: 2017-10-10
 ---
