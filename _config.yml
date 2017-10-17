@@ -18,5 +18,5 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 collections:
-  - projects
-  - videos
+    projects:
+        output: true

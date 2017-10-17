@@ -7,10 +7,18 @@ background: /img/home-bg.png
 <div class="row">
     <div class="col-lg-12">
         <div class="row">
-            {% assign sortedVideos = site.videos | reverse %}
-            {% for video in sortedVideos %}
+            {% assign sortedProjects = site.projects | reverse %}
+            {% for project in sortedProjects %}
             <div class="col-lg-4">
-                <div class="youtube" data-embed="{{ video.youtubeId}}"><div class="play-button"></div></div>
+                <div class="project">
+					<a href="{{ project.url }}">
+						{% if project.youtubeId == null %}
+							<img src="{{ project.thumbnail }}" />
+						{% else %}
+							<img src="https://img.youtube.com/vi/{{ project.youtubeId }}/sddefault.jpg" />
+						{% endif %}
+					</a>
+				</div>	
             </div>
             {% endfor %}
             <!--<div class="col-lg-4 embed-responsive embed-responsive-16by9">
