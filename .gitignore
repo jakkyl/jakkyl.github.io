@@ -1,6 +1,6 @@
 *.xcf
 _site
-_site/*
+Website
 .jekyll-metadata
 Gemfile.lock
 Gemfile
