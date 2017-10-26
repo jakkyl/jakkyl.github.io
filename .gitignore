@@ -1,9 +1,9 @@
 *.xcf
 _site
+Website
 .jekyll-metadata
 Gemfile.lock
 Gemfile
-/Website
 /img/IMG_20170903_183410.jpg
 /img/IMG_20170903_183256.jpg
 /img/home-bg.jpg
